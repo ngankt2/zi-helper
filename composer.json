@@ -1,0 +1,43 @@
+{
+  "name": "zi/helper",
+  "description": "ZiBase Helper function for laravel application",
+  "type": "library",
+  "keywords": [
+  ],
+  "homepage": "https://codezi.pro",
+  "require": {
+    "symfony/yaml": "^v6.3.8"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ZiBase\\": "src/"
+    },
+    "files": [
+      "zi_helper.php",
+      "zi_media_helper.php",
+      "zi_security_helper.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "ngannv",
+      "email": "ngankt2@gmail.com"
+    },
+    {
+      "name": "CodeZiTeam",
+      "email": "codezi.pro@gmail.com"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ZiBase\\Providers\\ZiValidatorProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable"
+}
